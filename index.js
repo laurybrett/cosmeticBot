@@ -18,8 +18,7 @@ var productName = ""  /* this is used for product selection name*/
 var memberId_Mapper = {
     "UH9USJTFU": "Guanguan HU",
     "UH9NUKU9Z": "Laury Bretteville",
-    "UHQQ9FW6B" : "Zheyun LAI",
-    "UHG3ZDSAD" : "Kaushik Muhury"
+    "UHQQ9FW6B" : "Zheyun LAI"
     }
 
 /* Func - recognize()
@@ -133,7 +132,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (message) => {
                 attachments: [
                     {
                         color: "#466BB0",
-                        title: `Good ! How it works : \n- Upload a picture of your product \n- Leave a review \nYou can upload a picture (png/jpg only).`
+                        title: `Good ! How it works : \n- Upload a picture of your product :camera: \n- Leave a review :writing_hand: \nYou can upload a picture (png/jpg only).`
                     }
                 ]
             }
@@ -145,7 +144,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (message) => {
                 attachments: [
                     {
                         color: "#466BB0",
-                        title: `Hi ${username}, Nice to meet you. \n I'm CosmeticBot, the bot that accompanies you throughout your journey !
+                        title: `Hi ${username}, Nice to meet you. \n I'm CosmeticBot :lipstick:, the bot that guides you throughout your journey !
                       \n What do you want to do ? \nYou can choose your option from below`,
                         actions: [
                             {
@@ -174,7 +173,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (message) => {
                     attachments: [
                         {
                             color: "Red",
-                            title: `Seems didnt like the product. Score of your satisfaction 1 / 5. \nWe will inform the company about your review. Thanks for your feedback!`
+                            title: `Seems like you didn't like the product. Score of your satisfaction 1 / 5. \nWe will inform the company about your review. Thanks for your feedback!`
                         }
                     ]
                 }
@@ -185,7 +184,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (message) => {
                     attachments: [
                         {
                             color: "Green",
-                            title: `Seems you like the product. Score of your satisfaction 4 / 5. \nWe will inform the company about your review. Thanks for your feedback!`
+                            title: `It seems you like the product. Score of your satisfaction 4 / 5. \nWe will inform the company about your review :green_book:. Thanks for your feedback!`
                         }
                     ]
                 }
